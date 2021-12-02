@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "UTM";
+    font-display: swap;
+    src: url("../fonts/word/UTM\ Neo\ Sans\ IntelBold.ttf") format("truetype");
+}
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    color: $text-color;
+}
+.heading {
+    color: $color-green;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background: $color-green;
+        right: -60px;
+        bottom: 5px;
+    }
+}
+.section-title {
+    font-size: 36px;
+    font-family: "UTM";
+    font-weight: 700;
+    padding-right: 30px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    @include maxWidth(480px) {
+        padding-right: 0;
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+}
+.truncate-h {
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}

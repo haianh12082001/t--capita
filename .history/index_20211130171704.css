@@ -1,0 +1,11 @@
+.top-header {
+    height: 40px;
+}
+.left {
+    background: red;
+    width: 70%;
+}
+.right {
+    background: #000;
+    width: 30%;
+}

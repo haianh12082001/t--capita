@@ -1,0 +1,92 @@
+.top-header {
+    height: 50px;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    .bg-left {
+        background: #1f2d33;
+        width: 70%;
+        height: 50px;
+    }
+    .bg-right {
+        background: $color-global;
+        width: 30%;
+        height: 50px;
+        justify-content: space-between;
+    }
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+        span {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background: $color-global;
+                bottom: 0;
+                left: -10px;
+            }
+        }
+    }
+    &--social {
+        i {
+            margin-left: 20px;
+        }
+    }
+}
+.menu {
+    background: #fff;
+    &-logo {
+        height: 72px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        li {
+            padding: 33px 0;
+            a {
+                color: #000;
+                font-weight: 500;
+            }
+        }
+    }
+    .headphones-search {
+        // padding: 33px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu-headphones {
+            i {
+                margin-right: 7px;
+                color: #1c9204;
+            }
+            span {
+                color: #a4a4a4;
+                font-weight: 400;
+                margin-right: 7px;
+            }
+            p {
+                font-weight: 500;
+            }
+        }
+        .menu-search {
+            height: 59px;
+            width: 59px;
+            border-radius: 50%;
+            background: $color-global-dark;
+        }
+    }
+}
