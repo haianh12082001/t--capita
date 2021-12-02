@@ -168,7 +168,8 @@ $(function () {
         $('.opacity__menu').toggleClass('open__opacity');
     })
     $('.menu-search').click(function () {
-        $('.header--form ').toggleClass('active');
-
+        $('.header--form ').removeClass('active');
+        $('.menu-bar i').removeClass('fa-times');
+        $('.opacity__menu').toggleClass('open__opacity');
     })
 })

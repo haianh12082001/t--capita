@@ -128,6 +128,44 @@ body {
   z-index: 88;
 }
 
+.header--form {
+  width: 30%;
+  position: fixed;
+  right: 0;
+  z-index: 2;
+  visibility: hidden;
+  transition: transform 0.3s ease;
+}
+.header--form.active {
+  visibility: inherit;
+}
+@media screen and (max-width: 768px) {
+  .header--form {
+    width: 100%;
+  }
+}
+.header--form .header--input {
+  display: flex;
+}
+.header--form .header--control {
+  background: #fff;
+  border-color: #666;
+  color: #000;
+  display: block;
+  padding: 6px 12px;
+  border: 1px solid #ced4da;
+  flex: 1 1 auto;
+}
+.header--form .btn-search {
+  background: #fff;
+  border-color: #666;
+  color: #000;
+  display: block;
+  padding: 4px 12px;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+}
+
 .top-header {
   height: 50px;
   position: relative;
@@ -973,6 +1011,7 @@ body {
   display: flex !important;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .feedback-content .list .slick-prev i,
 .feedback-content .list .slick-next i {

@@ -9,38 +9,13 @@
     // display: none;
 }
 .header--form {
-    width: 30%;
-    position: fixed;
-    right: 0;
-    z-index: 2;
-    visibility: hidden;
-    transition: transform 0.3s ease;
-    &.active {
-        visibility: inherit;
-    }
-    @include maxWidth(768px) {
-        width: 100%;
-    }
+    position: absolute;
     .header--input {
         display: flex;
     }
-    .header--control {
-        background: #fff;
-        border-color: #666;
-        color: #000;
-        display: block;
-        padding: 6px 12px;
-        border: 1px solid #ced4da;
-        flex: 1 1 auto;
-    }
-    .btn-search {
-        background: #fff;
-        border-color: #666;
-        color: #000;
-        display: block;
-        padding: 4px 12px;
-        border: 1px solid #ced4da;
-        cursor: pointer;
+    .mobile-search {
+        background: $color-white;
+        border-radius: 0;
     }
 }
 .top-header {

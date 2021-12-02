@@ -167,8 +167,9 @@ $(function () {
         $('.menu-bar i').removeClass('fa-times');
         $('.opacity__menu').toggleClass('open__opacity');
     })
-    $('.menu-search').click(function () {
-        $('.header--form ').toggleClass('active');
-
+    $('.opacity__menu').click(function () {
+        $('.menu-list').removeClass('active');
+        $('.menu-bar i').removeClass('fa-times');
+        $('.opacity__menu').toggleClass('open__opacity');
     })
 })

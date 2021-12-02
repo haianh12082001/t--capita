@@ -13,11 +13,8 @@
     position: fixed;
     right: 0;
     z-index: 2;
-    visibility: hidden;
+    // visibility: hidden;
     transition: transform 0.3s ease;
-    &.active {
-        visibility: inherit;
-    }
     @include maxWidth(768px) {
         width: 100%;
     }
@@ -33,7 +30,7 @@
         border: 1px solid #ced4da;
         flex: 1 1 auto;
     }
-    .btn-search {
+    .mobile-search {
         background: #fff;
         border-color: #666;
         color: #000;
