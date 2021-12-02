@@ -251,15 +251,13 @@
         margin-bottom: 20px;
         &-img {
             padding: 0 20px;
+            height: 293px;
             margin: 0 auto;
             transform: translateY(20%);
             img {
                 width: 100%;
-                height: 293px;
+                height: 100%;
                 object-fit: cover;
-                @include maxWidth(480px) {
-                    height: 250px;
-                }
             }
         }
         .info {
@@ -524,14 +522,8 @@
         }
     }
 }
-.top--footer {
-    margin-top: -50px;
-}
 .partner {
     display: block;
-    position: relative;
-    z-index: 3;
-    transform: translateY(50%);
     .slick-list {
         margin: 0 -15px;
     }
@@ -557,13 +549,10 @@
     }
 }
 .home-submit {
-    padding-top: 90px;
+    padding-top: 120px;
     padding-bottom: 60px;
     background: $color-global;
-    // transform: translateY(-20%);
-    // margin-top: -20px;
-    position: relative;
-    z-index: 2;
+    transform: translateY(-15%);
     .title {
         font-family: "UTM";
         font-size: 36px;

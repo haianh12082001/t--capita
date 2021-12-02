@@ -107,7 +107,7 @@
                 font-weight: 500;
             }
             .sub-menu {
-                @include minWidth(769px) {
+                @include minWidth(768px) {
                     position: absolute;
                     width: 200px;
                     background: $color-white;
@@ -120,7 +120,6 @@
                 }
                 @include maxWidth(768px) {
                     position: relative;
-                    border-left: 2px solid $color-global;
                 }
             }
             li {

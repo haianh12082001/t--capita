@@ -213,18 +213,44 @@ body {
     transform: translateX(0);
   }
 }
-.menu-list li {
+.menu-list .menu-item {
   padding: 33px 0;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
-  .menu-list li {
+  .menu-list .menu-item {
     text-transform: uppercase;
     padding: 15px 0;
   }
 }
-.menu-list li a {
+.menu-list .menu-item a {
   color: #000;
   font-weight: 500;
+}
+@media screen and (min-width: 769px) {
+  .menu-list .menu-item .sub-menu {
+    position: absolute;
+    width: 200px;
+    background: #fff;
+    top: 90px;
+    transform: scale(0);
+    transition: transform 0.8s ease;
+    transform-origin: top left;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-list .menu-item .sub-menu {
+    position: relative;
+    border-left: 2px solid #927ab6;
+  }
+}
+.menu-list .menu-item li {
+  padding: 20px;
+}
+.menu-list .menu-item:hover .sub-menu {
+  transform: scale(1);
 }
 .menu .headphones-search {
   display: flex;
@@ -508,7 +534,11 @@ body {
 }
 .introduce-left {
   position: relative;
-  padding-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .introduce-left {
+    padding-top: 40px;
+  }
 }
 .introduce-left .name {
   display: inline-block;
@@ -688,14 +718,18 @@ body {
 }
 .service .item-img {
   padding: 0 20px;
-  height: 293px;
   margin: 0 auto;
   transform: translateY(20%);
 }
 .service .item-img img {
   width: 100%;
-  height: 100%;
+  height: 293px;
   object-fit: cover;
+}
+@media screen and (max-width: 480px) {
+  .service .item-img img {
+    height: 250px;
+  }
 }
 .service .item .info {
   padding: 20px;
@@ -964,9 +998,15 @@ body {
   font-family: "UTM";
 }
 
+.top--footer {
+  margin-top: -50px;
+}
+
 .partner {
-  transform: translateY(50%);
   display: block;
+  position: relative;
+  z-index: 3;
+  transform: translateY(50%);
 }
 .partner .slick-list {
   margin: 0 -15px;
@@ -991,9 +1031,11 @@ body {
 }
 
 .home-submit {
-  padding-top: 120px;
+  padding-top: 90px;
   padding-bottom: 60px;
   background: #927ab6;
+  position: relative;
+  z-index: 2;
 }
 .home-submit .title {
   font-family: "UTM";
@@ -1001,6 +1043,11 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
   color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .home-submit .title {
+    font-size: 28px;
+  }
 }
 .home-submit .des {
   color: #fff;
