@@ -77,14 +77,9 @@
 }
 .introduce {
     padding: 70px 0;
-    @include maxWidth(768px) {
-        padding: 30px 0;
-    }
     @include maxWidth(480px) {
         padding-bottom: 20px;
-        padding-top: 50px;
     }
-
     &-left {
         position: relative;
         // padding-top: 40px
@@ -375,9 +370,6 @@
 .feedback {
     padding: 30px 0 60px 0;
     position: relative;
-    @include maxWidth(480px) {
-        padding-bottom: 30px;
-    }
     .container-fluid {
         @include minWidth(1200px) {
             padding: 0;
@@ -423,7 +415,7 @@
             padding: 40px;
         }
         @include maxWidth(480px) {
-            padding: 20px 0 50px;
+            padding: 20px 0;
         }
         .quotes-img {
             position: relative;
@@ -469,9 +461,6 @@
             justify-content: center;
             i {
                 font-size: 12px;
-            }
-            @include maxWidth(480px) {
-                bottom: -45px;
             }
         }
         .list .slick-prev {

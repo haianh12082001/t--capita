@@ -544,9 +544,15 @@ body {
 .introduce {
   padding: 70px 0;
 }
+@media screen and (max-width: 768px) {
+  .introduce {
+    padding: 30px 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .introduce {
     padding-bottom: 20px;
+    padding-top: 50px;
   }
 }
 .introduce-left {
@@ -667,6 +673,11 @@ body {
 .introduce .content-detail .nav-pills .nav-link.active {
   background: #927ab6;
   color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .introduce .content-detail .nav-pills .nav-link {
+    padding: 8px 20px;
+  }
 }
 .introduce .content-detail .tab-content .text {
   text-align: justify;
@@ -856,6 +867,11 @@ body {
   padding: 30px 0 60px 0;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .feedback {
+    padding-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .feedback .container-fluid {
     padding: 0;
@@ -864,6 +880,8 @@ body {
 .feedback .sub-title {
   padding-right: 40px;
   -webkit-line-clamp: 4;
+  margin-bottom: 30px;
+  text-align: justify;
 }
 .feedback .sub-title span {
   max-width: 546px;
@@ -874,17 +892,23 @@ body {
     padding-right: 0;
   }
 }
-.feedback-img {
-  height: 612px;
-}
 .feedback-img img {
   width: 100%;
-  height: 100%;
+  height: 612px;
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .feedback-img img {
+    height: 271px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .feedback-img img {
+    height: 200px;
+  }
 }
 .feedback-content {
   background: #49326b;
-  height: 350px;
   width: 100%;
   position: absolute;
   bottom: -50px;
@@ -892,14 +916,36 @@ body {
   padding: 60px;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .feedback-content {
+    position: initial;
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .feedback-content {
+    padding: 20px 0 50px;
+  }
+}
 .feedback-content .quotes-img {
   position: relative;
   margin-right: 30px;
+}
+@media screen and (max-width: 480px) {
+  .feedback-content .quotes-img {
+    margin-right: 5px;
+  }
 }
 .feedback-content .quotes-img img {
   height: 32px;
   max-width: 42px;
   object-fit: cover;
+}
+@media screen and (max-width: 480px) {
+  .feedback-content .quotes-img img {
+    height: 20px;
+    max-width: 30px;
+  }
 }
 .feedback-content .quotes-img::before {
   position: absolute;
@@ -932,6 +978,12 @@ body {
 .feedback-content .list .slick-next i {
   font-size: 12px;
 }
+@media screen and (max-width: 480px) {
+  .feedback-content .list .slick-prev,
+.feedback-content .list .slick-next {
+    bottom: -45px;
+  }
+}
 .feedback-content .list .slick-prev {
   right: 20%;
 }
@@ -940,6 +992,11 @@ body {
 }
 .feedback-content .item {
   margin: 0 30px;
+}
+@media screen and (max-width: 480px) {
+  .feedback-content .item {
+    margin: 0 10px;
+  }
 }
 .feedback-content .body .content-detail {
   text-align: justify;

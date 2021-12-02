@@ -77,14 +77,9 @@
 }
 .introduce {
     padding: 70px 0;
-    @include maxWidth(768px) {
-        padding: 30px 0;
-    }
     @include maxWidth(480px) {
         padding-bottom: 20px;
-        padding-top: 50px;
     }
-
     &-left {
         position: relative;
         // padding-top: 40px
@@ -375,9 +370,6 @@
 .feedback {
     padding: 30px 0 60px 0;
     position: relative;
-    @include maxWidth(480px) {
-        padding-bottom: 30px;
-    }
     .container-fluid {
         @include minWidth(1200px) {
             padding: 0;
@@ -386,8 +378,6 @@
     .sub-title {
         padding-right: 40px;
         -webkit-line-clamp: 4;
-        margin-bottom: 30px;
-        text-align: justify;
         span {
             max-width: 546px;
             display: block;
@@ -405,7 +395,7 @@
                 height: 271px;
             }
             @include maxWidth(480px) {
-                height: 200px;
+                height: 294px;
             }
         }
     }
@@ -423,22 +413,15 @@
             padding: 40px;
         }
         @include maxWidth(480px) {
-            padding: 20px 0 50px;
+            padding: 0;
         }
         .quotes-img {
             position: relative;
             margin-right: 30px;
-            @include maxWidth(480px) {
-                margin-right: 5px;
-            }
             img {
                 height: 32px;
                 max-width: 42px;
                 object-fit: cover;
-                @include maxWidth(480px) {
-                    height: 20px;
-                    max-width: 30px;
-                }
             }
             &::before {
                 position: absolute;
@@ -470,9 +453,6 @@
             i {
                 font-size: 12px;
             }
-            @include maxWidth(480px) {
-                bottom: -45px;
-            }
         }
         .list .slick-prev {
             right: 20%;
@@ -482,9 +462,6 @@
         }
         .item {
             margin: 0 30px;
-            @include maxWidth(480px) {
-                margin: 0 10px;
-            }
         }
         .body {
             .content-detail {
